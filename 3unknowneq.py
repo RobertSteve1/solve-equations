@@ -15,7 +15,7 @@ d3=float(input())
 
 
 
-a = array([[x1,y1,z1], [x2,y2,z2], [x3,y3,z3]])
-b = array([d1,d2,d3])
-x = np.solve(a, b)
+a = np.array([[x1,y1,z1], [x2,y2,z2], [x3,y3,z3]])
+b = np.array([d1,d2,d3])
+x = np.linalg.solve(a, b)
 print x
